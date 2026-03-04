@@ -21,3 +21,7 @@ def get_fluid_property(fluid: str, output_key: str, prop1: str, val1: float, pro
 def list_fluids() -> list:
     """사용 가능한 유체 리스트의 일부를 반환합니다."""
     return ["Water", "R134a", "CO2", "Ammonia", "Air", "Hydrogen"]
+
+def run_mcp():
+    """Prefect Horizon이 실행할 엔트리포인트 함수"""
+    mcp.run()
